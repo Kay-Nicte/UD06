@@ -18,11 +18,18 @@ public class Ejercicio8App {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		int i = 0;
+		// TODO Auto-generated method stub	
+		
 		int[] array=new int[10];
-			
+		
+		array = rellenarArray(array);	
+		mostrarArray(array);
+	}
+	
+	public static int[] rellenarArray(int[] array) {
+		
+		int i = 0;
+
 		//Bucle para rellenar el array de valores introducidos por parámetro
 		while (i<10) {
 		String askValue = JOptionPane.showInputDialog("Introduce otro valor: ");
@@ -31,10 +38,15 @@ public class Ejercicio8App {
 		//Meter el valor introducido en el array
 		array[i] = value;
 		i++;	
-		}
+		}	
 		
+		return array;
+	}
+	
+	public static void mostrarArray(int[] array) {
+				
 		//Bucle para mostrar el array
-		for (int x=0; x<=10; x++) {
+		for (int x=0; x<array.length; x++) {
 		System.out.println("Valor "+(x+1)+": "+array[x]);
 		}
 	}
