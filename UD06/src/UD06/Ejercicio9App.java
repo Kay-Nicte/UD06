@@ -42,6 +42,7 @@ public class Ejercicio9App {
 		array[i] = random;
 		i++;	
 	}	
+		
 		int suma=0;
 		int sumaTotal=0;
 		
@@ -50,13 +51,10 @@ public class Ejercicio9App {
 		
 		JOptionPane.showMessageDialog(null, "Valor "+(x+1)+": "+array[x]);
 		
-		sumaTotal = suma+array[x];
-		suma = array[x];
+		suma = suma + array[x];
 		
-		JOptionPane.showMessageDialog(null, "Suma total: "+sumaTotal);
-
 		}
-		JOptionPane.showMessageDialog(null, "Suma total: "+sumaTotal);
+		JOptionPane.showMessageDialog(null, "Suma total: "+suma);
 
 
 		
