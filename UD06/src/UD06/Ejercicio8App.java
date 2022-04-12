@@ -32,7 +32,7 @@ public class Ejercicio8App {
 
 		//Bucle para rellenar el array de valores introducidos por parámetro
 		while (i<10) {
-		String askValue = JOptionPane.showInputDialog("Introduce otro valor: ");
+		String askValue = JOptionPane.showInputDialog(null, "Introduce un valor: ");
 		int value = Integer.parseInt(askValue);
 		
 		//Meter el valor introducido en el array
